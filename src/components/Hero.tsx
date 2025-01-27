@@ -22,6 +22,7 @@ const Hero = () => {
           Destrave o método DualFlow para aprender mais de 40 idiomas e alcançar o nível de conversação em poucos meses com a forma mais didática e acelerada do mercado!
           </p>
           <div className="flex gap-4 items-center">
+            <a href="https://pay.hotmart.com/D96966130K?sck=HOTMART_PRODUCT_PAGE&off=8429n4o8&hotfeature=32&_gl=1*8xt4v8*_gcl_au*Njk1MTEzNjQxLjE3MzgwMDE1OTU.*_ga*MjEwOTUzMjE1MC4xNzM4MDAxNTkw*_ga_GQH2V1F11Q*MTczODAwMTU4OS4xLjEuMTczODAwMzA0OS41OS4wLjA.&bid=1738003056723" target="_blank" rel="noopener noreferrer">
             <Button className="bg-neon text-black hover:bg-neon/40 hover:text-neon text-2xl px-16 py-8 lg:px-28 lg:py-10">
               Seja Membro
               <ArrowRight className="ml-2" size={20} />
@@ -29,6 +30,7 @@ const Hero = () => {
             <Button variant="link" className="text-white hover:text-neon text-lg">
               +
             </Button>
+            </a>
           </div>
           <Stats />
         </div>

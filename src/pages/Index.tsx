@@ -7,7 +7,8 @@ import Testimonials from "@/components/Testimonials";
 import InsidePlatform from "@/components/InsidePlatform";
 import Learn from "@/components/Learn";
 import AnimatedBackground from "@/components/AnimatedBackground";
-//import Pricing  from "@/components/Pricing";
+import Pricing  from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
 
 
 const Index = () => {
@@ -21,6 +22,8 @@ const Index = () => {
       <Creator />
       <Learn/>
       <Testimonials />
+      <Pricing />
+      <FAQ/>
     </main>
   );
 };

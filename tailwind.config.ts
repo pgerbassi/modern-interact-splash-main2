@@ -93,7 +93,15 @@ export default {
           "100%": {
             transform: "translate(0, 0) rotate(0deg)",
             opacity: "0"
-          }
+          },
+        },
+        "border-glow": {
+          "0%, 100%": {
+            "border-color": "hsl(var(--primary))",
+          },
+          "50%": {
+            "border-color": "hsl(var(--accent))",
+          },
         },
       },
       animation: {
@@ -102,7 +110,8 @@ export default {
         float: "float 3s ease-in-out infinite",
         "fade-up": "fade-up 0.5s ease-out forwards",
         "gradient": "gradient 15s ease infinite",
-        "float-word": "float-word var(--duration, 15s) infinite linear"
+        "float-word": "float-word var(--duration, 15s) infinite linear",
+        "border-glow": "border-glow 2s ease-in-out infinite"
       },
     },
   },

@@ -23,7 +23,9 @@ const InsidePlatform = () => {
           </p>
           
           {/* Shining button with animation */}
+          
           <div className="relative inline-block group">
+          <a href="https://pay.hotmart.com/D96966130K?sck=HOTMART_PRODUCT_PAGE&off=8429n4o8&hotfeature=32&_gl=1*8xt4v8*_gcl_au*Njk1MTEzNjQxLjE3MzgwMDE1OTU.*_ga*MjEwOTUzMjE1MC4xNzM4MDAxNTkw*_ga_GQH2V1F11Q*MTczODAwMTU4OS4xLjEuMTczODAwMzA0OS41OS4wLjA.&bid=1738003056723" target="_blank" rel="noopener noreferrer">
             <div className="absolute -inset-1 bg-gradient-to-r from-neon via-purple-500 to-pink-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
             <Button 
               className="relative px-8 py-6 bg-black border border-neon text-neon hover:bg-black/50 text-lg"
@@ -31,6 +33,7 @@ const InsidePlatform = () => {
               Começe sua Jornada!
               <ArrowRight className="ml-2" />
             </Button>
+            </a>
           </div>
           <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl animate-float">
               <iframe
