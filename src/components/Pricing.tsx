@@ -84,7 +84,7 @@ const Pricing = () => {
             <PricingCard
               type="Aproveite!"
               price={397}
-              period={isYearly ? "" : "para sempre."}
+              period={isYearly ? "" : "por 1 ano."}
               buttonText="Seja Membro!"
               variant="default"
             />
