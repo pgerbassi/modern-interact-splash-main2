@@ -16,10 +16,11 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8 animate-fade-up">
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-          <span className="text-neon">Aprenda Idiomas</span> de Forma Prática e Eficiente em <span className="text-neon">Apenas 3 Meses</span>
+            <span>Aprenda</span>
+          <span className="text-neon"> Qualquer Idioma</span> até o Nível Conversasional em <span className="text-neon">Apenas 3 Meses</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-lg">
-          Destrave o método DualFlow para aprender mais de 40 idiomas e alcançar o nível de conversação em poucos meses com a forma mais didática e acelerada do mercado!
+          Descubra o método que me fez aprender mais de 40 idiomas aos 20 anos e que pode transformar você em um hiperpoliglota.
           </p>
           <div className="flex gap-4 items-center">
             <a href="https://pay.hotmart.com/D96966130K?bid=1735330800536" target="_blank" rel="noopener noreferrer">

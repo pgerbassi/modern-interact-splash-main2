@@ -1,47 +1,33 @@
-import { Rocket, Sparkles, Star, Award, Flame, Zap, Sun, Brain, ArrowRight } from "lucide-react";
+import { Rocket, Sparkles, Star, Award, Flame, Zap, Sun, Brain, ArrowRight, Globe } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 
 const features = [
   {
     icon: Rocket,
-    title: "Conecte-se com o Mundo",
-    description: "Fale a língua local e viva experiências únicas em qualquer lugar do mundo.",
+    title: "Realização Pessoal",
+    description: "Experimente a satisfação de dominar vários idiomas e juntar-se ao grupo de elite de poliglotas globais.",
     color: "text-[#F97316]",
     bgGlow: "group-hover:shadow-[0_0_30px_-5px_#F97316]"
   },
   {
-    icon: Sparkles,
-    title: "Garanta um futuro global",
-    description: "Domine idiomas e conquiste as melhores oportunidades no mercado internacional.",
+    icon: Globe,
+    title: "Dominar Múltiplos Idiomas",
+    description: "Quebre barreiras linguísticas e comunique-se com confiança em vários idiomas, abrindo portas para novas culturas e oportunidades.",
     color: "text-[#D946EF]",
     bgGlow: "group-hover:shadow-[0_0_30px_-5px_#D946EF]"
   },
   {
     icon: Zap,
-    title: "Supere seus limites",
-    description: "Ganhe confiança e destaque-se em qualquer conversa, em qualquer idioma.",
+    title: "Crescer Profissionalmente",
+    description: "Aumente seu valor profissional e acesse mercados de trabalho internacionais com proficiência em múltiplos idiomas.",
     color: "text-[#8B5CF6]",
     bgGlow: "group-hover:shadow-[0_0_30px_-5px_#8B5CF6]"
   },
   {
     icon: Brain,
-    title: "Turbine seu cérebro",
-    description: "Aprender idiomas melhora sua memória, foco e até sua criatividade.",
-    color: "text-[#0EA5E9]",
-    bgGlow: "group-hover:shadow-[0_0_30px_-5px_#0EA5E9]"
-  },
-  {
-    icon: Flame,
-    title: "Seja imbatível nos estudos",
-    description: "Use o domínio de idiomas como vantagem em concursos e na vida acadêmica.",
-    color: "text-[#F97316]",
-    bgGlow: "group-hover:shadow-[0_0_30px_-5px_#F97316]"
-  },
-  {
-    icon: Sun,
-    title: "Transforme palavras em lucro",
-    description: "Monetize seu conhecimento como tradutor, professor ou criador de conteúdo.",
+    title: "Aprender de forma Acelerada",
+    description: "Aprenda idiomas até 3x mais rápido com nossa metodologia poliglota comprovada e técnicas de aprimoramento cognitivo.",
     color: "text-[#0EA5E9]",
     bgGlow: "group-hover:shadow-[0_0_30px_-5px_#0EA5E9]"
   }
@@ -60,7 +46,7 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <Card
               key={feature.title}
