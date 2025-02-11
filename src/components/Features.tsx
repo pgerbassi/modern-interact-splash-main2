@@ -37,10 +37,10 @@ const Features = () => {
   return (
     <section className="py-12 px-4 
       android-small:mt-[50vh] 
-      android-medium:mt-[35vh] 
-      iphone-se:mt-[40vh] 
-      iphone-x:mt-[25vh] 
-      xs:mt-[15vh]
+      android-medium:mt-[40vh] 
+      iphone-se:mt-[50vh] 
+      iphone-x:mt-[40vh] 
+      xs:mt-[40vh]
       sm:mt-10 
       md:mt-0">
       <div className="max-w-7xl mx-auto">

@@ -13,7 +13,7 @@ export default {
     screens: {
       'android-small': {'max': '361px'},  // Specific Android small devices
       'android-medium': {'min': '362px', 'max': '414px'},  // Slightly larger Android devices
-      'iphone-se': {'max': '375px'},  // iPhone SE and similar small iOS devices
+      'iphone-se': {'min': '372px','max': '375px'},  // iPhone SE and similar small iOS devices
       'iphone-x': {'min': '376px', 'max': '415px'},  // iPhone X and similar iOS devices
       'xs': '430px',
       'sm': '640px',
