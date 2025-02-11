@@ -36,7 +36,10 @@ const Objectives = () => {
           Entenda o nosso <span className="text-neon">Método</span>
         </h2>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto animate-fade-up">
-          Escolha o método Dual Flow e torne-se HIPER poliglota em tempo recorde, com prática diária ao vivo e aprendizado simultâneo de múltiplos idiomas.
+          Escolha o método Dual Flow e torne-se HIPER Poliglota em tempo recorde, com prática diária ao vivo e aprendizado simultâneo de múltiplos idiomas.
+        </p>
+        <p className="text-neon text-center mb-12 max-w-2xl mx-auto animate-fade-up">
+          Hiperpoliglota: Pessoas que falam 10 ou mais línguas
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {objectives.map((objective, index) => (

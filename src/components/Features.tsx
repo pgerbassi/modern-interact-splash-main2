@@ -39,7 +39,7 @@ const Features = () => {
       android-small:mt-[50vh] 
       android-medium:mt-[35vh] 
       iphone-se:mt-[40vh] 
-      iphone-x:mt-[15vh] 
+      iphone-x:mt-[35vh] 
       sm:mt-10 
       md:mt-0">
       <div className="max-w-7xl mx-auto">
@@ -66,7 +66,7 @@ const Features = () => {
             iphone-x:text-sm 
             md:text-base 
             max-w-2xl mx-auto">
-            É para você <span className="text-neon font-semibold">Aprender</span> um novo idioma e abrir portas para novas oportunidades, viagens inesquecíveis e até aquela promoção no trabalho!
+            É para você que quer <span className="text-neon font-semibold">Dominar</span> um novo idioma e abrir portas para novas oportunidades, viagens inesquecíveis e até aquela promoção no trabalho!
           </p>
         </div>
         
