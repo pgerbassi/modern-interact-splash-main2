@@ -39,7 +39,8 @@ const Features = () => {
       android-small:mt-[50vh] 
       android-medium:mt-[35vh] 
       iphone-se:mt-[40vh] 
-      iphone-x:mt-[35vh] 
+      iphone-x:mt-[25vh] 
+      xs:mt-[15vh]
       sm:mt-10 
       md:mt-0">
       <div className="max-w-7xl mx-auto">
