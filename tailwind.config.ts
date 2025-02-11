@@ -13,8 +13,10 @@ export default {
     screens: {
       'android-small': {'max': '361px'},  // Specific Android small devices
       'android-medium': {'min': '362px', 'max': '414px'},  // Slightly larger Android devices
+      'android-large': {'min': '362px', 'max': '371px'},  // Slightly larger Android devices
       'iphone-se': {'min': '372px','max': '375px'},  // iPhone SE and similar small iOS devices
       'iphone-x': {'min': '376px', 'max': '415px'},  // iPhone X and similar iOS devices
+      'iphone-pro': {'min': '416px', 'max': '494px'},  // iPhone X and similar iOS devices
       'xs': '430px',
       'sm': '640px',
       'md': '768px',
