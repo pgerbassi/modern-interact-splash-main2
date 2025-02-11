@@ -42,7 +42,7 @@ const Features = () => {
       iphone-se:mt-[40vh] 
       iphone-x:mt-[35vh]
       iphone-pro:mt-[35vh]
-      xs:mt-[35vh]
+      xs:mt-[26vh]
       sm:mt-40 
       md:mt-8">
       <div className="max-w-7xl mx-auto">
