@@ -35,18 +35,42 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-24 px-6">
+    <section className="py-12 px-4 
+      android-small:mt-[50vh] 
+      android-medium:mt-[35vh] 
+      iphone-se:mt-[40vh] 
+      iphone-x:mt-[15vh] 
+      sm:mt-10 
+      md:mt-0">
       <div className="max-w-7xl mx-auto">
-        <div className=" text-center mb-14 mt-28 animate-fade-up">
-          <h2 className="text-4xl font-bold mb-4">
+        <div className="text-center mb-10 
+          android-small:mt-2 
+          android-medium:mt-4 
+          iphone-se:mt-4 
+          iphone-x:mt-4 
+          md:mt-28 
+          animate-fade-up">
+          <h2 className="text-3xl 
+            android-small:text-2xl 
+            android-medium:text-3xl 
+            iphone-se:text-2xl 
+            iphone-x:text-3xl 
+            md:text-4xl 
+            font-bold mb-3">
             A Formação <span className="text-neon">Hiperpoliglota</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 text-sm 
+            android-small:text-xs 
+            android-medium:text-sm 
+            iphone-se:text-xs 
+            iphone-x:text-sm 
+            md:text-base 
+            max-w-2xl mx-auto">
             É para você <span className="text-neon font-semibold">Aprender</span> um novo idioma e abrir portas para novas oportunidades, viagens inesquecíveis e até aquela promoção no trabalho!
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8">
           {features.map((feature, index) => (
             <Card
               key={feature.title}
@@ -56,28 +80,55 @@ const Features = () => {
               }}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-black to-transparent opacity-90" />
-              <CardContent className="p-6 relative">
-                <div className={`mb-4 ${feature.color} transition-transform duration-300`}>
+              <CardContent className="p-4 md:p-6 relative">
+                <div className={`mb-2 md:mb-4 ${feature.color} transition-transform duration-300`}>
                   <feature.icon
-                    size={32}
+                    size={24}
                     className="group-hover:scale-110 group-hover:animate-pulse transition-all duration-300"
                   />
                 </div>
-                <h3 className={`text-xl font-semibold mb-2 group-hover:${feature.color} transition-colors duration-300`}>
+                <h3 className={`text-base 
+                  android-small:text-sm 
+                  android-medium:text-base 
+                  iphone-se:text-sm 
+                  iphone-x:text-base 
+                  md:text-xl 
+                  font-semibold mb-1 md:mb-2 
+                  group-hover:${feature.color} 
+                  transition-colors duration-300`}>
                   {feature.title}
                 </h3>
-                <p className="text-gray-400 group-hover:text-white transition-colors duration-300">
+                <p className="text-gray-400 text-xs 
+                  android-small:text-[10px] 
+                  android-medium:text-xs 
+                  iphone-se:text-[10px] 
+                  iphone-x:text-xs 
+                  md:text-base 
+                  group-hover:text-white 
+                  transition-colors duration-300">
                   {feature.description}
                 </p>
               </CardContent>
             </Card>
           ))}
         </div>
-        <div className="flex pt-10 justify-center items-center">
+        <div className="flex pt-6 md:pt-10 justify-center items-center">
         <a href="https://pay.hotmart.com/D96966130K?bid=1735330800536" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-neon text-black hover:bg-neon/90 text-lg px-8">
+            <Button className="bg-neon text-black hover:bg-neon/90 
+              text-base 
+              android-small:text-sm 
+              android-medium:text-base 
+              iphone-se:text-sm 
+              iphone-x:text-base 
+              md:text-lg 
+              px-6 
+              android-small:px-4 
+              android-medium:px-6 
+              iphone-se:px-4 
+              iphone-x:px-6 
+              md:px-8">
               Seja Membro
-              <ArrowRight className="ml-2" size={20} />
+              <ArrowRight className="ml-2" size={16} />
             </Button>
         </a>
           </div>

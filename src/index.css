@@ -46,6 +46,27 @@
   }
 }
 
+/* Neon Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 132, 255); /* Bright green from primary color */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 132, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 132, 255, 0.5);
+}
+
 @keyframes float-word {
   0% {
     transform: translate(0, 0) rotate(0deg);

@@ -16,9 +16,9 @@ const objectives = [
   },
   {
     icon: Target,
-    title: "Prática ao vivo",
+    title: "Encontros diários ao vivo",
     description:
-      "Encontros diários para conversação real e evolução acelerada.",
+      "Desbloqueie a sua fala em qualquer idioma do zero ao avançado.",
   },
   {
     icon: Check,

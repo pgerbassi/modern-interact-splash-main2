@@ -10,6 +10,18 @@ export default {
   ],
   prefix: "",
   theme: {
+    screens: {
+      'android-small': {'max': '361px'},  // Specific Android small devices
+      'android-medium': {'min': '362px', 'max': '414px'},  // Slightly larger Android devices
+      'iphone-se': {'max': '375px'},  // iPhone SE and similar small iOS devices
+      'iphone-x': {'min': '376px', 'max': '415px'},  // iPhone X and similar iOS devices
+      'xs': '430px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     container: {
       center: true,
       padding: "2rem",

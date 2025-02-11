@@ -75,7 +75,7 @@ const Pricing = () => {
             Sistema Completo de Aprendizado de Idiomas
           </h2>
           <p className="text-muted-foreground text-lg">
-            7 Dias de garatia.
+            7 Dias de Garantia.
           </p>
         </div>
 
