@@ -17,7 +17,7 @@ const Creator = () => {
               Sobre Vitor
             </h2>
             <p className="text-lg text-muted-foreground">
-              Vitor é um hiperpoliglota apaixonado por aprendizagem de idiomas que revolucionou a maneira de como estudar uma nova lingua. Descubra o método que o fez aprender mais de 40 idiomas aos 20 anos e que pode transformar você em um hiperpoliglota.
+              Vitor é um Hiperpoliglota apaixonado por aprendizagem de idiomas que revolucionou a maneira de como estudar uma nova lingua. Descubra o método que o fez aprender mais de 40 idiomas aos 20 anos e que pode transformar você em um hiperpoliglota.
             </p>
             <div className="flex items-center space-x-4">
               <Avatar className="h-24 w-24 border-2 border-neon animate-float">
