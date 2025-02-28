@@ -25,7 +25,7 @@ const InsidePlatform = () => {
           {/* Shining button with animation */}
           
           <div className="relative inline-block group">
-          <a href="https://pay.hotmart.com/D96966130K?bid=1735330800536" target="_blank" rel="noopener noreferrer">
+          <a href="https://pay.hotmart.com/D96966130K?checkoutMode=10" target="_blank" rel="noopener noreferrer">
             <div className="absolute -inset-1 bg-gradient-to-r from-neon via-purple-500 to-pink-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
             <Button 
               className="relative px-8 py-6 bg-black border border-neon text-neon hover:bg-black/50 text-lg"

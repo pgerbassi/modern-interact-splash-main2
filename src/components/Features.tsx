@@ -116,7 +116,7 @@ const Features = () => {
           ))}
         </div>
         <div className="flex pt-6 md:pt-10 justify-center items-center">
-        <a href="https://pay.hotmart.com/D96966130K?bid=1735330800536" target="_blank" rel="noopener noreferrer">
+        <a href="https://pay.hotmart.com/D96966130K?checkoutMode=10" target="_blank" rel="noopener noreferrer">
             <Button className="bg-neon text-black hover:bg-neon/90 
               text-base 
               android-small:text-sm 

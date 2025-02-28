@@ -51,7 +51,7 @@ const PricingCard = ({
             </div>
           ))}
         </div>
-        <a href="https://pay.hotmart.com/D96966130K?bid=1735330800536" target="_blank" rel="noopener noreferrer">
+        <a href="https://pay.hotmart.com/D96966130K?checkoutMode=10" target="_blank" rel="noopener noreferrer">
         <Button 
           className="w-full text-lg py-6 mt-6"
           variant={variant === "default" ? "secondary" : "default"}
