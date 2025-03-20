@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 const InsidePlatform = () => {
-  const videoId = "H-t7IdF7r08";
+  const videoId = "OJDCP0_MTYE";
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
   
   return (
