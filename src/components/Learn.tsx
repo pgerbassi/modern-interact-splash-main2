@@ -57,7 +57,7 @@ const Learn = () => {
           </Card>
 
           {/* 2 Section */}
-          
+          {/*
           <Card className="bg-secondary border-secondary hover:border-neon transition-all duration-300 group animate-fade-up">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
@@ -84,8 +84,9 @@ const Learn = () => {
               </div>
             </CardContent>
           </Card> 
-
+            */}
           {/* 3 section */}
+          {/*
           <Card className="bg-secondary border-secondary hover:border-neon transition-all duration-300 group animate-fade-up">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
@@ -112,6 +113,7 @@ const Learn = () => {
               </div>
             </CardContent>
           </Card>
+          */}
         </div>
       </div>
     </section>
