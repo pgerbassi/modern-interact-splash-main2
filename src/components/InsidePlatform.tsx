@@ -19,7 +19,7 @@ const InsidePlatform = () => {
             Veja por dentro da Plataforma
           </h2>
           <p className="text-lg text-gray-300">
-            Em apenas <span className="text-neon font-bold">3 meses</span> você atinge o nível conversacional, <span className="text-neon font-bold">6 meses</span> atinja o nivel avançado para que em <span className="text-neon font-bold">1 ANO</span> tenha a fluência absoluta.
+            Em apenas <span className="text-neon font-bold">3 meses</span> você atinge o nível conversacional, <span className="text-neon font-bold">6 meses</span> atinja o nivel avançado para que em <span className="text-neon font-bold">1 ANO</span> tenha fluência.
           </p>
           
           {/* Shining button with animation */}
