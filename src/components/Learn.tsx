@@ -16,7 +16,7 @@ const learningPoints = {
 
 const Learn = () => {
   return (
-    <section className="py-24  min-h-screen bg-black">
+    <section className="py-24 h-[60vh] bg-black">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16 animate-fade-up">
           <h2 className="text-4xl font-bold mb-4">
