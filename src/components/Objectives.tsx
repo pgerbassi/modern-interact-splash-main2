@@ -10,21 +10,21 @@ const objectives = [
   },
   {
     icon: Zap,
-    title: "Resultados rápidos",
+    title: "Método 4x",
     description:
-      "Reduza o tempo e custo do aprendizado enquanto domina múltiplas línguas.",
+      "O Método 4x acelera a sua fala desde o primeiro dia de estudo no idioma.",
   },
   {
     icon: Target,
-    title: "Encontros diários ao vivo",
+    title: "Método MV",
     description:
-      "Desbloqueie a sua fala em qualquer idioma do zero ao avançado.",
+      "A melhor metodologia para sair do intermediário.",
   },
   {
     icon: Check,
-    title: "Conteúdo completo",
+    title: "Metodologia completa",
     description:
-      "Tenha acesso imediato ao curso brasileiro com a maior diversidade de idiomas",
+      "Todos os métodos como: Método MV, Método Boost, Irmersão, Caprinos e Polilínguas",
   },
 ];
 
@@ -36,11 +36,11 @@ const Objectives = () => {
           Entenda o nosso <span className="text-neon">Método</span>
         </h2>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto animate-fade-up">
-          Escolha o método Dual Flow e torne-se HIPER Poliglota em tempo recorde, com prática diária ao vivo e aprendizado simultâneo de múltiplos idiomas.
+          O Formação Hiperpoliglota consiste em TODOS os métodos que eu utilizar para aprender um idioma.
         </p>
-        <p className="text-neon text-center mb-12 max-w-2xl mx-auto animate-fade-up">
+        {/*<p className="text-neon text-center mb-12 max-w-2xl mx-auto animate-fade-up">
           Hiperpoliglota: Pessoas que falam 10 ou mais línguas
-        </p>
+        </p>*/}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {objectives.map((objective, index) => (
             <Card
