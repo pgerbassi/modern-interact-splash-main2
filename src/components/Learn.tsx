@@ -27,7 +27,7 @@ const Learn = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-1 gap-8">
+        <div className="grid md:grid-cols-1 gap-16 items-center justify-center">
           {/* 1 Section */}
           <Card className="bg-secondary border-secondary hover:border-neon transition-all duration-300 group animate-fade-up">
             <CardContent className="p-8">
