@@ -12,7 +12,7 @@ const features = [
   },
   {
     icon: Globe,
-    title: "Dominar Múltiplos Idiomas",
+    title: "Aprenda Múltiplos Idiomas Simultaneamente",
     description: "Quebre barreiras linguísticas e comunique-se com confiança em vários idiomas, abrindo portas para novas culturas e oportunidades.",
     color: "text-[#D946EF]",
     bgGlow: "group-hover:shadow-[0_0_30px_-5px_#D946EF]"
@@ -69,7 +69,7 @@ const Features = () => {
             iphone-x:text-sm 
             md:text-base 
             max-w-2xl mx-auto">
-            É para você que quer <span className="text-neon font-semibold">Dominar</span> um novo idioma e abrir portas para novas oportunidades, viagens inesquecíveis e até aquela promoção no trabalho!
+            É para você que quer <span className="text-neon font-semibold">Aprender</span> um novo idioma e abrir portas para novas oportunidades, viagens inesquecíveis e até aquela promoção no trabalho!
           </p>
         </div>
         
