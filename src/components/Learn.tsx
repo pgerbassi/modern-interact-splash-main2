@@ -16,7 +16,7 @@ const learningPoints = {
 
 const Learn = () => {
   return (
-    <section className="py-24 bg-black">
+    <section className="py-24  min-h-screen bg-black">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16 animate-fade-up">
           <h2 className="text-4xl font-bold mb-4">
@@ -27,7 +27,7 @@ const Learn = () => {
           </p>
         </div>
         
-        <div className="grid min-h-screen place-items-center">
+        <div className="grid place-items-center">
           {/* 1 Section */}
           <Card className="bg-secondary border-secondary hover:border-neon transition-all duration-300 group animate-fade-up">
             <CardContent className="p-8">
