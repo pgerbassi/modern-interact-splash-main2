@@ -27,7 +27,7 @@ const Learn = () => {
           </p>
         </div>
         
-        <div className="grid h-screen place-items-center">
+        <div className="grid min-h-screen place-items-center">
           {/* 1 Section */}
           <Card className="bg-secondary border-secondary hover:border-neon transition-all duration-300 group animate-fade-up">
             <CardContent className="p-8">
