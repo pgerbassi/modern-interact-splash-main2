@@ -38,7 +38,7 @@ const PricingCard = ({
           </span>
           <div className="flex items-baseline gap-2">
             <span className="text-5xl font-bold">R$</span>
-            <span className="text-7xl font-bold">{price}</span>
+            <span className="text-7xl font-bold">{price},90</span>
           </div>
           <p className="text-sm opacity-90">Por membro, {period}</p>
         </div>
@@ -83,7 +83,7 @@ const Pricing = () => {
           <div className="animate-fade-up [animation-delay:200ms]">
             <PricingCard
               type="Aproveite!"
-              price={197.90}
+              price={197}
               period={isYearly ? "" : "por 1 ano de acesso."}
               buttonText="Seja Membro!"
               variant="default"
