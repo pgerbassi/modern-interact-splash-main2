@@ -83,7 +83,7 @@ const Pricing = () => {
           <div className="animate-fade-up [animation-delay:200ms]">
             <PricingCard
               type="Aproveite!"
-              price={397}
+              price={197,90}
               period={isYearly ? "" : "por 1 ano de acesso."}
               buttonText="Seja Membro!"
               variant="default"
