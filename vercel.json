@@ -1,0 +1,17 @@
+{
+    "routes": [
+      {
+        "path": "/",
+        "element": "Index"
+      },
+      {
+        "path": "/upsell",
+        "element": "Upsell"
+      },
+      {
+        "path": "/metodomv",
+        "element": "IndexMv"
+      }
+    ]
+  }
+  
