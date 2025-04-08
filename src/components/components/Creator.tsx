@@ -1,4 +1,4 @@
-import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 import Plane from "public/airplane.png"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { Globe } from "lucide-react";
@@ -12,19 +12,19 @@ const Creator = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center relative">
           <div className="space-y-6 animate-fade-up z-10 relative">
-            <h2 className="text-4xl font-bold tracking-tighter text-neon">
+            <h2 className="text-4xl font-bold tracking-tighter text-primary">
               Sobre Vitor
             </h2>
             <p className="text-lg text-muted-foreground">
               Vitor é um Hiperpoliglota apaixonado por aprendizagem de idiomas que revolucionou a maneira de como estudar uma nova lingua. Descubra o método que o fez aprender mais de 40 idiomas aos 20 anos e que pode transformar você em um hiperpoliglota.
             </p>
             <div className="flex items-center space-x-4">
-              <Avatar className="h-24 w-24 border-2 border-neon animate-float">
+              <Avatar className="h-24 w-24 border-2 border-primary animate-float">
                 <AvatarImage className="object-cover rotate-90 object-[65%_64%]" src="./vitor.jpeg" />
                 <AvatarFallback>VT</AvatarFallback>
               </Avatar>
               <div>
-                <h3 className="text-xl font-semibold text-neon">Vitor</h3>
+                <h3 className="text-xl font-semibold">Vitor</h3>
                 <p className="text-muted-foreground">Founder & Creator</p>
               </div>
             </div>
@@ -32,8 +32,8 @@ const Creator = () => {
             {/* Languages Section */}
             <div className="mt-8 w-full">
               <div className="flex items-center mb-4">
-                <Globe className="mr-2 text-neon" size={24} />
-                <h3 className="text-xl font-semibold text-neon">Minha Experiência</h3>
+                <Globe className="mr-2 text-primary" size={24} />
+                <h3 className="text-xl font-semibold text-primary">Minha Experiência</h3>
               </div>
               <div className="relative w-full">
                 <div className="overflow-x-hidden md:overflow-hidden scrollbar-hide">

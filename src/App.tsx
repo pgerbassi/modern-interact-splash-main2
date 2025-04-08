@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Upsell from "./components/Upsell";
+import IndexMv from "./pages/indexMv";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +17,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/upsell" element={<Upsell />} />
+          <Route path="/metodomv" element={<IndexMv />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
