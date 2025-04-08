@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Clock, CheckCircle, ShieldCheck, Sparkles, Tag } from 'lucide-react';
+import { useUTMParams } from '@/hooks/use-utm';
 
 const OfferSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -8,6 +9,9 @@ const OfferSection = () => {
     minutes: 59,
     seconds: 59
   });
+      const utmParams = useUTMParams();
+      const buyLink = "https://pay.hotmart.com/I99094450Y?checkoutMode=10";
+      const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -130,7 +134,7 @@ const OfferSection = () => {
                   </div>
                 </div>
               </div>
-              <a href="https://pay.hotmart.com/I99094450Y?checkoutMode=10" target='_blank'>
+              <a href={buyLinkWithUTM} target='_blank'>
               <button className="cta-button w-full py-4 text-lg font-semibold mb-4 bg-gradient-to-r from-gray-700 to-primary hover:brightness-110 transition-all duration-300 animate-pulse">
                 Quero Garantir Minha Vaga Agora
               </button>

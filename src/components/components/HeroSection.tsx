@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { useUTMParams } from '@/hooks/use-utm';
 const HeroSection = () => {
   const scrollToNextSection = () => {
     const painPointsSection = document.getElementById('painPoints');
@@ -9,6 +10,9 @@ const HeroSection = () => {
       painPointsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+    const utmParams = useUTMParams();
+    const buyLink = "https://pay.hotmart.com/I99094450Y?checkoutMode=10";
+    const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-12 pb-12 px-6 md:px-12 overflow-hidden">
@@ -39,7 +43,7 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-24 lg:justify-start lg:mb-0">
-          <a href="https://pay.hotmart.com/I99094450Y?checkoutMode=10" target='_blank'>
+          <a href={buyLinkWithUTM} target='_blank'>
           <button className="cta-button text-base md:text-lg font-semibold px-10 py-4">
           👉 Quero acessar o Método VM agora
           </button>
