@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Upsell from "./components/Upsell";
 import IndexMv from "./pages/indexMv";
-import routesData from '../vercel.json';
+import routesData from '../routes.json';
 
 const queryClient = new QueryClient();
 const routeComponents = { Index, Upsell, IndexMv };
