@@ -25,7 +25,7 @@ const Upsell = () => {
   const handleCtaClick = () => {
     // You can add your conversion tracking or checkout link here
     console.log("CTA clicked!");
-    window.open("https://pay.hotmart.com/D96966130K", "_blank");
+    window.open("https://pay.hotmart.com/D96966130K?off=0ndklqp0&bid=1744129469817", "_blank");
   };
 
   const splitTextIntoSpans = (text) => {
@@ -47,9 +47,9 @@ const Upsell = () => {
         {/* Heading */}
         <h1 
           ref={headingRef}
-          className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-center tracking-tight opacity-0 transform translate-y-4 transition-all duration-700 letter-animation"
+          className="text-neon text-2xl md:text-4xl lg:text-5xl font-extrabold text-center tracking-tight opacity-0 transform translate-y-4 transition-all duration-700 letter-animation"
         >
-          <span className="shimmer-text bg-white text-border">Sua compra ainda não acabou, veja o vídeo para entender melhor</span>
+          <span className="text-neon text-ring/55 text-border">Sua compra ainda não acabou, veja o vídeo para entender melhor</span>
         </h1>
 
         {/* Subheading */}

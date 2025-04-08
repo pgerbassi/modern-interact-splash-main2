@@ -28,7 +28,8 @@ const HeroSection = () => {
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-          <span className="block text-white">O Método que vai te tirar do intermediário de </span>
+          <span className="text-gradient">O Método</span>
+          <span className="block text-white"> que vai acelerar os seus resultados em </span>
           <span className="text-gradient">qualquer idioma!</span>
         </h1>
         

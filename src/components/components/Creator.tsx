@@ -20,7 +20,7 @@ const Creator = () => {
             </p>
             <div className="flex items-center space-x-4">
               <Avatar className="h-24 w-24 border-2 border-primary animate-float">
-                <AvatarImage className="object-cover rotate-90 object-[65%_64%]" src="./vitor.jpeg" />
+                <AvatarImage className="object-cover object-[65%_64%]" src="./vitor.jpeg" />
                 <AvatarFallback>VT</AvatarFallback>
               </Avatar>
               <div>

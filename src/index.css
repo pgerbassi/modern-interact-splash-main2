@@ -144,8 +144,8 @@
   }
   
   .cta-button {
-    @apply bg-gradient-to-r from-blue-500 to-blue-700 text-white font-bold py-4 px-8 rounded-lg 
-           hover:animate-scale-up hover:from-blue-600 hover:to-blue-800 transition-all 
+    @apply bg-gradient-to-r from-blue-600 via-neon to-blue-600 text-white font-bold py-4 px-8 rounded-lg 
+           hover:animate-scale-up hover:from-ring hover:to-green-900 transition-all 
            shadow-lg hover:shadow-xl animate-pulse-glow;
   }
 
