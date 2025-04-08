@@ -1,9 +1,13 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { useUTMParams } from "@/hooks/use-utm";
 
 const InsidePlatform = () => {
   const videoId = "OJDCP0_MTYE";
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    const utmParams = useUTMParams();
+    const buyLink = "https://pay.hotmart.com/D96966130K";
+    const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
   
   return (
     <section className="min-h-screen relative overflow-hidden py-24">
@@ -25,7 +29,7 @@ const InsidePlatform = () => {
           {/* Shining button with animation */}
           
           <div className="relative inline-block group">
-          <a href="https://pay.hotmart.com/D96966130K" target="_blank" rel="noopener noreferrer">
+          <a href={buyLinkWithUTM} target="_blank" rel="noopener noreferrer">
             <div className="absolute -inset-1 bg-gradient-to-r from-neon via-purple-500 to-pink-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
             <Button 
               className="relative px-8 py-6 bg-black border border-neon text-neon hover:bg-black/50 text-lg"

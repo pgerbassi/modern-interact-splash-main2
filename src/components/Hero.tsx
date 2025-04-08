@@ -7,7 +7,7 @@ const Hero = () => {
   const utmParams = useUTMParams();
   const buyLink = "https://pay.hotmart.com/D96966130K";
   const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
-  console.log(utmParams);
+  //console.log(utmParams);
   return (
 
     <div className="max-h-screen bg-black pt-10 px-6 pb-24 lg:pt-36 relative">

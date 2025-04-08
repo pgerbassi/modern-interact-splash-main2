@@ -3,6 +3,15 @@ import { Card } from "@/components/ui/card";
 //import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
 import { Check } from "lucide-react";
+import { useUTMParams } from "@/hooks/use-utm";
+
+const Link = () => {
+  const utmParams = useUTMParams();
+  const buyLink = "https://pay.hotmart.com/D96966130K";
+  const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
+
+  return buyLinkWithUTM;
+}
 
 const features = [
   "Metodologia completa de aprendizado",
@@ -19,7 +28,7 @@ const PricingCard = ({
   period,
   buttonText,
   variant = "default",
-}: {
+} : {
   type: string;
   price: number;
   period: string;
@@ -51,7 +60,7 @@ const PricingCard = ({
             </div>
           ))}
         </div>
-        <a href="https://pay.hotmart.com/D96966130K" target="_blank" rel="noopener noreferrer">
+        <a href={Link()} target="_blank" rel="noopener noreferrer">
         <Button 
           className="w-full text-lg py-6 mt-6"
           variant={variant === "default" ? "secondary" : "default"}
@@ -66,7 +75,6 @@ const PricingCard = ({
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);
-
   return (
     <section className="py-24 px-4 relative overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-12">

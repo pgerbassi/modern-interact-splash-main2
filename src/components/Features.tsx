@@ -1,6 +1,7 @@
 import { Rocket, Sparkles, Star, Award, Flame, Zap, Sun, Brain, ArrowRight, Globe } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
+import { useUTMParams } from "@/hooks/use-utm";
 
 const features = [
   {
@@ -34,6 +35,9 @@ const features = [
 ];
 
 const Features = () => {
+    const utmParams = useUTMParams();
+    const buyLink = "https://pay.hotmart.com/D96966130K";
+    const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
   return (
     <section className="py-12 px-4 
       android-small:mt-[50vh] 
@@ -116,7 +120,7 @@ const Features = () => {
           ))}
         </div>
         <div className="flex pt-6 md:pt-10 justify-center items-center">
-        <a href="https://pay.hotmart.com/D96966130K" target="_blank" rel="noopener noreferrer">
+        <a href={buyLinkWithUTM} target="_blank" rel="noopener noreferrer">
             <Button className="bg-neon text-black hover:bg-neon/90 
               text-base 
               android-small:text-sm 
