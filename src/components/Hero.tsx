@@ -1,9 +1,15 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import Stats from "./Stats";
+import {useUTMParams} from "@/hooks/use-utm";
 
 const Hero = () => {
+  const utmParams = useUTMParams();
+  const buyLink = "https://pay.hotmart.com/D96966130K";
+  const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
+  console.log(utmParams);
   return (
+
     <div className="max-h-screen bg-black pt-10 px-6 pb-24 lg:pt-36 relative">
       <div 
         className="absolute inset-0 opacity-20"
@@ -31,7 +37,7 @@ const Hero = () => {
             Descubra o método que me fez aprender mais de 40 idiomas aos 20 anos e que pode transformar você em um Hiperpoliglota.
           </p>
           <div className="flex gap-4 items-center justify-center md:justify-start">
-            <a href="https://pay.hotmart.com/D96966130K" target="_blank" rel="noopener noreferrer">
+            <a href={buyLinkWithUTM} target="_blank" rel="noopener noreferrer">
               <Button className="bg-neon text-black hover:bg-neon/40 hover:text-neon text-2xl px-16 py-8 lg:px-28 lg:py-10">
                 Seja Membro
                 <ArrowRight className="ml-2" size={20} />

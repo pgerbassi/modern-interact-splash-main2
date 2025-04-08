@@ -7,10 +7,12 @@ import Index from "./pages/Index";
 import Upsell from "./components/Upsell";
 import IndexMv from "./pages/indexMv";
 import routesData from '../routes.json';
+//import useUTMParams from "./hooks/use-utm";
 
 const queryClient = new QueryClient();
 const routeComponents = { Index, Upsell, IndexMv };
-
+  // Track UTM parameters when they change
+//  console.log(useUTMParams());
 const App = () => (
 
   <QueryClientProvider client={queryClient}>
