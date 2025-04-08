@@ -1,12 +1,16 @@
 
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { useUTMParams } from "@/hooks/use-utm";
 
 const Upsell = () => {
   const videoRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const subheadingRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
+    const utmParams = useUTMParams();
+    const buyLink = "https://pay.hotmart.com/D96966130K?off=0ndklqp0&bid=1744129469817";
+    const buyLinkWithUTM = `${buyLink}?utm_source=${utmParams.utm_source}&utm_medium=${utmParams.utm_medium}&utm_campaign=${utmParams.utm_campaign}&utm_term=${utmParams.utm_term}&utm_content=${utmParams.utm_content}`;
 
   useEffect(() => {
     // Add fade-in animations on component mount
@@ -24,8 +28,8 @@ const Upsell = () => {
 
   const handleCtaClick = () => {
     // You can add your conversion tracking or checkout link here
-    console.log("CTA clicked!");
-    window.open("https://pay.hotmart.com/D96966130K?off=0ndklqp0&bid=1744129469817", "_blank");
+   // console.log("CTA clicked!");
+    window.open(buyLinkWithUTM, "_blank");
   };
 
   const splitTextIntoSpans = (text) => {
